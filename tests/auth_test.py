@@ -1,7 +1,7 @@
 import allure
 from allure_commons.types import Severity
 
-from project_diploma.data.data import Customer
+from project_diploma.data.data_customer import Customer
 from project_diploma.pages.web.home_page import home_page
 
 

@@ -2,13 +2,6 @@ import dataclasses
 
 
 @dataclasses.dataclass
-class Customer:
-    name: str
-    email: str
-    password: str
-
-
-@dataclasses.dataclass
 class Product:
     name: str
     writer: str
