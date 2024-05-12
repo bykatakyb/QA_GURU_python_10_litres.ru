@@ -10,6 +10,7 @@ from project_diploma.pages.web.home_page import home_page
 @allure.feature("Authorization - POSITIVE case")
 @allure.tag('WEB')
 @allure.severity(Severity.CRITICAL)
+@allure.label('layer', 'UI')
 def test_auth_with_right_pass():
     customer = Customer(name='bukatovvs',
                         email='bukatovvs@gmail.com',
@@ -25,6 +26,7 @@ def test_auth_with_right_pass():
 @allure.feature("Authorization - NEGATIVE case")
 @allure.tag('WEB')
 @allure.severity(Severity.NORMAL)
+@allure.label('layer', 'UI')
 def test_auth_with_wrong_pass():
     customer = Customer(name='bukatovvs',
                         email='bukatovvs@gmail.com',
