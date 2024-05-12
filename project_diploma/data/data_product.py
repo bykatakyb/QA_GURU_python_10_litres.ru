@@ -9,10 +9,10 @@ class Product:
     price: str
 
 
-product = Product(title='Мартин Иден',
-                  writer='Джек Лондон',
-                  url='audiobook/dzhek-london/martin-iden-603635/',
-                  price='253 ₽')
+product1 = Product(title='Мартин Иден',
+                   writer='Джек Лондон',
+                   url='audiobook/dzhek-london/martin-iden-603635/',
+                   price='253 ₽')
 
 product2 = Product(title='Дом, в котором…',
                    writer='Мариам Петросян',
