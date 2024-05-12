@@ -16,6 +16,7 @@ def test_product_search_by_title():
     home_page.search_product_using_title(product1)
     home_page.check_searched_product_title_in_search_results(product1)
 
+
 @allure.epic('Product Search')
 @allure.label("owner", "Bykat")
 @allure.feature("Product Search on the home page by writer")
