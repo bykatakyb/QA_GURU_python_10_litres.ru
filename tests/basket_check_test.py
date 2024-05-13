@@ -8,9 +8,20 @@ from project_diploma.pages.web.home_page import home_page
 
 @allure.epic('Basket')
 @allure.label("owner", "Bykat")
-@allure.feature("Basket is empty by default")
+@allure.feature("Basket have promo banner")
 @allure.tag('WEB')
-@allure.severity(Severity.CRITICAL)
+@allure.severity(Severity.BLOCKER)
+@allure.label('layer', 'UI')
+def test_basket_have_promo():
+    basket_page.open()
+    basket_page.check_promo_inside_basket()
+
+
+@allure.epic('Basket')
+@allure.label("owner", "Bykat")
+@allure.feature("Basket is empty by default (unauthorized)")
+@allure.tag('WEB')
+@allure.severity(Severity.MINOR)
 @allure.label('layer', 'UI')
 def test_basket_is_empty_for_unauthorized_visitor():
     home_page.open()
@@ -20,7 +31,7 @@ def test_basket_is_empty_for_unauthorized_visitor():
 
 @allure.epic('Basket')
 @allure.label("owner", "Bykat")
-@allure.feature("Basket is empty by default")
+@allure.feature("Basket is empty by default (authorized)")
 @allure.tag('WEB')
 @allure.severity(Severity.CRITICAL)
 @allure.label('layer', 'UI')
