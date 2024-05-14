@@ -12,7 +12,7 @@ from project_diploma.utils.requests_api import api_get
 @allure.tag('API')
 @allure.severity(Severity.CRITICAL)
 @allure.label('layer', 'REST')
-def test_product_search_by_existed_title():
+def test_product_search_by_existed_title_via_rest():
     scheme = load_scheme('product_search_get_pass.json')
     book_title = 'Разговоры с друзьями'
     art_types = 'text_book'
@@ -30,7 +30,7 @@ def test_product_search_by_existed_title():
 @allure.tag('API')
 @allure.severity(Severity.CRITICAL)
 @allure.label('layer', 'REST')
-def test_product_search_by_nonexistent_title():
+def test_product_search_by_nonexistent_title_via_rest():
     scheme = load_scheme('product_search_get_fail.json')
     book_title = 'йцукенфывап'
     types = 'text_book'

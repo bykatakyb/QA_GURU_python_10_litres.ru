@@ -28,7 +28,7 @@ def test_auth_with_right_pass_via_rest():
 @allure.tag('API')
 @allure.severity(Severity.NORMAL)
 @allure.label('layer', 'REST')
-def test_auth_with_wrong_pass():
+def test_auth_with_wrong_pass_via_rest():
     scheme = load_scheme('auth_post_fail.json')
     url = "/auth/login"
     result = api_post(url, json={"login": email, "password": wrong_password})

@@ -91,13 +91,14 @@ pytest tests
 ### Интеграция с Jira
 > <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1230">Jira</a>
 
-
+![This is an image](design/image/jira.png)
 
 ----
 ### Оповещение о результатах прогона тестов в Telegram
 
-
+![This is an image](design/image/tg_notification.png)
 
 ----
 ### Пример видео прохождения ui-автотеста
 
+![autotest_gif](design/image/autotest.gif)
