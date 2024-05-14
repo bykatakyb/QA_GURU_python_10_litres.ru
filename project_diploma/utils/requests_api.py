@@ -17,3 +17,10 @@ def api_post(url, **kwargs):
         result = requests.post(base_url + url, **kwargs)
         logging_api(result)
         return result
+
+
+def api_put(url, **kwargs):
+    with allure.step("PUT запрос"):
+        result = requests.put(base_url + url, **kwargs)
+        logging_api(result)
+        return result
