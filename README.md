@@ -4,7 +4,7 @@
 
 ![This is an image](design/image/litres_page.png)
 
-<h3> Список Автоматиризованныйх проверок:</h3>
+<h3> Список Автоматиризованных проверок:</h3>
 
 ### UI-тесты
 - [x] Авторизация с валидными данными 
@@ -53,49 +53,50 @@ pytest tests
 ----
 ### Allure отчет
 
-#### Общие результаты
+#### Обзор результатов
 
 ![This is an image](design/image/allure_report_overview.png)
 
-#### Список тест кейсов
+#### Список тест кейсов прогона
 
 ![This is an image](design/image/allure_report.png)
 
-#### Пример отчета о прохождении ui-теста
+#### Отчет о выполнении UI-теста
 
 ![This is an image](design/image/example_test_ui_allure.png)
 
-#### Пример отчета о прохождении api-теста
+#### Отчет о выполнении REST_API-теста
 
 ![This is an image](design/image/example_test_api_allure.png)
 
 
 ----
-### Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
+### Полная статистика выполнения тест-планов, отчёты и приложения к ним хранятся в Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/project/4235/dashboards">AllureTestOps</a> (доступ по запросу у `admin@qa.guru`)
 
 #### Тест-планы проекта
 
+![This is an image](design/image/allure_TestOps_test_plans.png)
 
-#### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
+#### Общий список всех кейсов проекта
 
+![This is an image](design/image/allure_TestOps_test_cases.png)
 
+#### Отчёт о выполнении одного из автотестов
 
-#### Пример отчёта выполнения одного из автотестов
+![This is an image](design/image/example_autotests_allure_TestOps.png)
 
+#### Тестовые артефакты (приложения)
 
+![This is an image](design/image/allure_TestOps_attachment.png)
 
-#### Тестовые артефакты
+#### Дашборд с общими результатами тестирования
 
+![This is an image](design/image/allure_TestOps_dashboard.png)
 
+#### История запуска тестовых сборок
 
-#### Пример dashboard с общими результатами тестирования
-
-
-
-#### История запуска тестовых наборов
-
-
+![This is an image](design/image/allure_TestOps_launches.png)
 
 ----
 ### Интеграция с Jira
@@ -104,11 +105,11 @@ pytest tests
 ![This is an image](design/image/jira.png)
 
 ----
-### Оповещение о результатах прогона тестов в Telegram
+### Оповещение о результатах тестового прогона в Telegram
 
 ![This is an image](design/image/tg_notification.png)
 
 ----
-### Пример видео прохождения UI-автотеста
+### Видео с выполнением одного из UI-автотестов
 
 ![autotest_gif](design/image/autotest.gif)
