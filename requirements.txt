@@ -1,7 +1,7 @@
 pytest==8.2.0
 selene>=2.0.0rc9
 allure-pytest>=2.13.5
-pyperclip==1.8.2
+pyperclip == 1.8.2
 requests>=2.31.0
 jsonschema>=4.22.0
 python-dotenv == 1.0.1
