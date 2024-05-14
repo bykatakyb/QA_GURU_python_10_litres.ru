@@ -42,6 +42,5 @@ def test_basket_is_empty_for_authorized_customer():
 
     home_page.open()
     home_page.do_authorization(customer)
-    # home_page.check_authorization_status_positive(customer)
     basket_page.open()
     basket_page.check_that_basket_is_empty()

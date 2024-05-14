@@ -21,7 +21,6 @@ class HomePage:
 
     def check_authorization_status_positive(self, customer):
         with allure.step("Проверить авторизацию (позитивный кейс)"):
-            # browser.element('.ProfileButton_profileButton__title').should(be.visible).click()
             browser.open("pages/personal_cabinet_notifications/")
             browser.open("pages/personal_cabinet_about_me/")
             browser.should(have.url("https://www.litres.ru/pages/personal_cabinet_about_me/"))
@@ -36,7 +35,6 @@ class HomePage:
 
     def search_product_using_title(self, product):
         with allure.step("Выполенить поиск продукта по названию"):
-            # pyperclip.copy(product.title) click().press(Keys.CONTROL + 'v')
             browser.element('[data-testid="search__input"]').click().perform(press_sequentially(f'{product.title}'))
             browser.element('[data-testid="search__button"]').should(be.visible).click()
         return self
@@ -48,7 +46,6 @@ class HomePage:
 
     def search_product_using_writer(self, product):
         with allure.step("Выполенить поиск продукта по писателю"):
-            # pyperclip.copy(product.writer) click().press(Keys.CONTROL + 'v')
             browser.element('[data-testid="search__input"]').click().perform(press_sequentially(f'{product.writer}'))
             browser.element('[data-testid="search__button"]').should(be.visible).click()
         return self

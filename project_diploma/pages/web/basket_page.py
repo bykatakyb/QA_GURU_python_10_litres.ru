@@ -10,8 +10,7 @@ class BasketPage:
 
     def check_promo_inside_basket(self):
         with allure.step("Проверить что в корзине есть рекламное предложение"):
-            browser.element('.FourArtGift_title___OYeB').should(
-                have.text('Четвёртая книга в подарок'))
+            browser.element('.FourArtGift_title___OYeB').should(have.text('Четвёртая книга в подарок'))
         return self
 
     def check_that_basket_is_empty(self):

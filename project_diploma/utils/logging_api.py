@@ -13,4 +13,3 @@ def logging_api(result):
     logging.info(result.request.url)
     logging.info(result.status_code)
     logging.info(result.text)
-   

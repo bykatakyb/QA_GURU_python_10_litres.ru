@@ -17,4 +17,3 @@ def api_post(url, **kwargs):
         result = requests.post(base_url + url, **kwargs)
         logging_api(result)
         return result
-    
