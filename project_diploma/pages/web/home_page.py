@@ -1,6 +1,7 @@
 import allure
 import pyperclip
 from selene import browser, be, have
+from selene.core import command
 from selenium.webdriver import Keys
 
 
@@ -34,9 +35,8 @@ class HomePage:
 
     def search_product_using_title(self, product):
         with allure.step("Выполенить поиск продукта по названию"):
-            pyperclip.copy(product.title)
-
-            browser.element('[data-testid="search__input"]').click().press(Keys.CONTROL + 'v')
+            # pyperclip.copy(product.title) click().press(Keys.CONTROL + 'v')
+            browser.element('[data-testid="search__input"]').click().perform(command.press_sequentially(f'{product.title}'))
             browser.element('[data-testid="search__button"]').should(be.visible).click()
         return self
 
@@ -47,9 +47,8 @@ class HomePage:
 
     def search_product_using_writer(self, product):
         with allure.step("Выполенить поиск продукта по писателю"):
-            pyperclip.copy(product.writer)
-
-            browser.element('[data-testid="search__input"]').click().press(Keys.CONTROL + 'v')
+            # pyperclip.copy(product.writer) click().press(Keys.CONTROL + 'v')
+            browser.element('[data-testid="search__input"]').click().perform(command.press_sequentially(f'{product.writer}'))
             browser.element('[data-testid="search__button"]').should(be.visible).click()
         return self
 
