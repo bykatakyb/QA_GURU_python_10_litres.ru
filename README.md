@@ -25,7 +25,15 @@
 
 
 ----
-### Проект реализован с использованием:
+### Особенности проекта:
+
+- Удаленный запуск через Jenkins
+- Отчетность в Allure
+- Сохранение артефактов (логов, скриншотов и видео)
+- Интеграция с AllureTestOPS и Jira
+- Оповещение в Telegram
+
+### Стэк технологий:
 <img src="design/icons/python-original.svg" width="50"> <img src="design/icons/intellij_pycharm.png" width="50"> <img src="design/icons/pytest.png" width="50"> <img src="design/icons/selene.png" width="50"> <img src="design/icons/allure_report.png" width="50"> <img src="design/icons/jenkins.png" width="50"> <img src="design/icons/selenoid.png" width="50"> <img src="design/icons/allure_testops.png" width="50"> <img src="design/icons/jira.png" width="50"> <img src="design/icons/tg.png" width="50"> 
 
 ----
