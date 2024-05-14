@@ -9,7 +9,7 @@ from project_diploma.pages.web.home_page import home_page
 @allure.label("owner", "Bykat")
 @allure.feature("Authorization - POSITIVE case")
 @allure.tag('WEB')
-@allure.severity(Severity.CRITICAL)
+@allure.severity(Severity.BLOCKER)
 @allure.label('layer', 'UI')
 def test_auth_with_right_pass():
     customer = Customer(name='bukatovvs',
