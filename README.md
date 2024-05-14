@@ -53,18 +53,21 @@ pytest tests
 ----
 ### Allure отчет
 
-
 #### Общие результаты
 
+![This is an image](design/image/allure_report_overview.png)
 
 #### Список тест кейсов
 
+![This is an image](design/image/allure_report.png)
 
 #### Пример отчета о прохождении ui-теста
 
+![This is an image](design/image/example_test_ui_allure.png)
 
 #### Пример отчета о прохождении api-теста
 
+![This is an image](design/image/example_test_api_allure.png)
 
 
 ----
