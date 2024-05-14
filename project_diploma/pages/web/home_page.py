@@ -8,7 +8,7 @@ class HomePage:
     def open(self):
         with allure.step("Открыть главную страницу"):
             browser.open("/")
-            return self
+        return self
 
     def do_authorization(self, customer):
         with allure.step("Авторизоваться"):
@@ -17,14 +17,14 @@ class HomePage:
             browser.element('.AuthContent_form__submit__LzXKD > [type="submit"]').should(be.visible).click()
             browser.element('[name="pwd"]').should(be.visible).type(customer.password)
             browser.element('.AuthContent_form__submit__LzXKD > [type="submit"]').should(be.visible).click()
-            browser.driver.refresh()
         return self
 
     def check_authorization_status_positive(self, customer):
         with allure.step("Проверить авторизацию (позитивный кейс)"):
-            browser.element('.ProfileButton_profileButton__Agdcv').should(be.visible).click()
+            # browser.element('.ProfileButton_profileButton__title').should(be.visible).click()
             browser.open("pages/personal_cabinet_notifications/")
             browser.open("pages/personal_cabinet_about_me/")
+            browser.should(have.url("https://www.litres.ru/pages/personal_cabinet_about_me/"))
             browser.element('span[class="user_header__name"]').should(have.text(customer.name))
         return self
 
