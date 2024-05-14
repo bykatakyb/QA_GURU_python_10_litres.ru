@@ -30,12 +30,33 @@
 
 ----
 ### Локальный запуск
-> Для локального запуска необходимо выполнить команду:
-```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pytest tests
+> Для локального запуска необходимо:
+
+1. Клонировать репозиторий на свою локальную машину при помощи git clone
+
+2. Создать и активировать виртуальное окружение:
+
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate
+  ```
+
+3. Установить зависимости с помощью pip:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+4. Запустить тесты командой:
+
+  ```bash
+  pytest .
+  ```
+
+5. Получить allure отчёт:
+
+```bash
+allure serve allure-results
 ```
 
 ----
