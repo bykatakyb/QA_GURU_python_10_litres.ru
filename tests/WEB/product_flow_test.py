@@ -17,6 +17,7 @@ def test_add_product_to_basket():
     product_page.add_product_to_basket()
     basket_page.open()
     basket_page.check_added_product_inside_basket(product2)
+    basket_page.delete_product_from_basket()
 
 @allure.epic('Product flow')
 @allure.label("owner", "Bykat")
