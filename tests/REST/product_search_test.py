@@ -23,6 +23,7 @@ def test_product_search_by_existed_title():
     assert result.status_code == 200
     assert result.json()['payload']['data'][0]['type'] == "text_book"
 
+
 @allure.epic('Product Search')
 @allure.label("owner", "Bykat")
 @allure.feature("Product Search by title via REST - NEGATIVE case")
