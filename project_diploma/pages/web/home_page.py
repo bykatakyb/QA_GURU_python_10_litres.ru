@@ -17,6 +17,7 @@ class HomePage:
             browser.element('.AuthContent_form__submit__LzXKD > [type="submit"]').should(be.visible).click()
             browser.element('[name="pwd"]').should(be.visible).type(customer.password)
             browser.element('.AuthContent_form__submit__LzXKD > [type="submit"]').should(be.visible).click()
+            browser.driver.refresh()
         return self
 
     def check_authorization_status_positive(self, customer):
