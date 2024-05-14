@@ -22,6 +22,7 @@ class HomePage:
     def check_authorization_status_positive(self, customer):
         with allure.step("Проверить авторизацию (позитивный кейс)"):
             browser.element('.ProfileButton_profileButton__Agdcv').should(be.visible).click()
+            browser.open("pages/personal_cabinet_notifications/")
             browser.open("pages/personal_cabinet_about_me/")
             browser.element('span[class="user_header__name"]').should(have.text(customer.name))
         return self
