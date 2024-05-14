@@ -16,7 +16,7 @@ class BasketPage:
 
     def check_that_basket_is_empty(self):
         with allure.step("Проверить что корзина пуста"):
-            browser.element('.EmptyState_empty__title__dZ7MW').should(have.text('Корзина пуста'))
+            browser.element('.EmptyState_empty__u9qK_ > .EmptyState_empty__title__dZ7MW').should(have.text('Корзина пуста'))
         return self
 
     def check_added_product_inside_basket(self, product):
