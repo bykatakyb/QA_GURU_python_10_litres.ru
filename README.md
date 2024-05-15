@@ -96,7 +96,7 @@ allure serve allure-results
 
 ![This is an image](design/image/example_test_ui_allure.png)
 
-#### Отчет о выполнении REST_API-теста
+#### Отчет о выполнении API-теста
 
 ![This is an image](design/image/example_test_api_allure.png)
 
