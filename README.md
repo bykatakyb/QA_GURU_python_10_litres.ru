@@ -103,7 +103,7 @@ allure serve allure-results
 
 ----
 ### Allure TestOps 
-#### (статистика выполнения тест-планов, отчёты и приложения к ним) 
+ Здесь сосредотачивается вся статистика выполнения тест-планов, отчёты и приложения к ним 
 > <a target="_blank" href="https://allure.autotests.cloud/project/4235/dashboards">AllureTestOps</a> (доступ по запросу у `admin@qa.guru`)
 
 #### Тест-планы проекта
