@@ -2,8 +2,8 @@ import allure
 import jsonschema
 from allure_commons.types import Severity
 
-from project_diploma.schemes.scheme_loader import load_scheme
-from project_diploma.utils.requests_api import api_post
+from litres_testing_project.schemes.scheme_loader import load_scheme
+from litres_testing_project.utils.requests_api import api_post
 from tests.REST.conftest import email, password, wrong_password
 
 

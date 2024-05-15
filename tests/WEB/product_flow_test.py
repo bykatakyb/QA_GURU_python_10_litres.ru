@@ -1,9 +1,9 @@
 import allure
 from allure_commons.types import Severity
 
-from project_diploma.data.data_product import product2, product3
-from project_diploma.pages.web.basket_page import basket_page
-from project_diploma.pages.web.product_page import product_page
+from litres_testing_project.data.data_product import product2, product3
+from litres_testing_project.pages.web.basket_page import basket_page
+from litres_testing_project.pages.web.product_page import product_page
 
 
 @allure.epic('Product flow')

@@ -1,8 +1,8 @@
 import allure
 from allure_commons.types import Severity
 
-from project_diploma.data.data_customer import Customer
-from project_diploma.pages.web.home_page import home_page
+from litres_testing_project.data.data_customer import Customer
+from litres_testing_project.pages.web.home_page import home_page
 
 
 @allure.epic('Auth')

@@ -1,7 +1,7 @@
 import allure
 import requests
 
-from project_diploma.utils.logging_api import logging_api
+from litres_testing_project.utils.logging_api import logging_api
 from tests.REST.conftest import base_url
 
 

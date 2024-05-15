@@ -1,8 +1,8 @@
 import allure
 from allure_commons.types import Severity
 
-from project_diploma.data.data_product import product1, product2
-from project_diploma.pages.web.home_page import home_page
+from litres_testing_project.data.data_product import product1, product2
+from litres_testing_project.pages.web.home_page import home_page
 
 
 @allure.epic('Product Search')

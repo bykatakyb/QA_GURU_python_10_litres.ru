@@ -6,7 +6,7 @@ from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from project_diploma.utils import attach
+from litres_testing_project.utils import attach
 
 DEFAULT_BROWSER_VERSION = "122.0"
 

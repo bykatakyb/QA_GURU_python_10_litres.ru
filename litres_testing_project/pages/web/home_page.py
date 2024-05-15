@@ -1,7 +1,7 @@
 import allure
 from selene import browser, be, have
 
-from project_diploma.utils.input_search_web import press_sequentially
+from litres_testing_project.utils.input_search_web import press_sequentially
 
 
 class HomePage:
